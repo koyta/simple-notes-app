@@ -6,6 +6,7 @@ import store from './store/store';
 import TextInput from './components/TextInput';
 import NotesList from './components/NotesList';
 import DateComponent from './components/Date';
+import ButtonDelete from './components/ButtonDelete';
 
 interface AppState {
   notes: NoteElement[];
@@ -136,7 +137,7 @@ class App extends React.Component<any, AppState> {
           <header>
             <DateComponent notes={this.state.notes} activeId={this.state.activeId}/>
             <span className="save">Saved</span>
-            <button type="button" onClick={this.onRemoveNote}>🗑️</button>
+            <ButtonDelete removeNote={this.onRemoveNote}/>
           </header>
           <TextInput
             notes={this.state.notes}

@@ -8,9 +8,8 @@ import { ChangeEvent } from 'react';
 const Search = Input.Search;
 
 const SearchClass: React.CSSProperties = {
-  width: '100%',
-  marginBottom: '5px',
-  marginTop: '5px'
+  width: 'calc(100% - 10px)',
+  margin: '5px'
 };
 
 interface NotesListProps {
