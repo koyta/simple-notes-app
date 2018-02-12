@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { NoteElement } from '../App';
+import { NoteElement } from '../interfaces';
 import * as moment from 'moment';
 import * as store from 'store';
 
